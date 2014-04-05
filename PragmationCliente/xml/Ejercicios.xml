@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ejercicios>
+<Ejercicio id="1" cat="2" dif="1">
+<img>imagen1.jpg</img>
+<context>A y B salen a pasear en un día en que hace mucho frío. Para A y B es evidente que hace mucho frio. Estando en la calle, A señala un termómentro que en ese instante marca -10 grados centigrados. En ese momento, se produce el siguiente diálogo entre Ay B.</context>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Es verdadero lo que ha dicho explícitamente B? es decir, ¿es verdad que hace calor?</txt>
+<teoria></teoria>
+<explain>En el "contexto" hemos señalado que hace mucho frío. Además el termómetro marca -10 grados centígrados. Por ello, lo dicho explícitamente por B, es decir, que hace calor, es falso.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿B cree que hace calor?</txt>
+<teoria></teoria>
+<explain>Hemos dicho en el "contexto" que para A y B es evidente que hace frío, esto quiere decir que B sabe que hace frío. Además -10 grados centígrados es una temperatura que se considera fría; por lo tanto, B sabe que hace frío y sabe que no hace calor.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿A cree que hace calor?</txt>
+<teoria></teoria>
+<explain>Hemos dicho en el "contexto" que para A y B es evidente que hace frío, esto quiere decir que B sabe que hace frío. Además -10 grados centígrados es una temperatura que se considera fría; por lo tanto, A sabe que hace frío y sabe que no hace calor.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>Teniendo en cuenta que A y B saben que hace frío, ¿B está diciendo algo que ambos saben que es falso?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que A y B saben que hace frío. ESto implica que A y B saben que lo dicho por B es falso. ES decir, ambos saben que "¡Qué calor hace!" es falso.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>La "máxima de cualidad"   dicta que debemos decir solamente cosas que creemos que son verdad. Teniendo esto en cuenta, ¿B está respetando la máxima de cualidad o la está violando?</txt>
+<teoria></teoria>
+<explain>En la pregunta 4 hemos dicho que B sabe que está diciendo algo falso. Por ello, B está violando la máxima de cualidad</explain>
+<respuestas>
+<respuesta right="0">B está respetando la máxima de cualidad</respuesta>
+<respuesta right="1">B está violando la máxima de cualidad</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿A sabe que B está violando la máxima de cualidad?</txt>
+<teoria></teoria>
+<explain>A sabe que lo que ha dicho B es falso (lo hemos dicho antes)
+A sabe que B también sabe que es falso  porque A sabe que a -10 grados todo el mundo -incluido B- pensaría que hace frío. 
+Por tanto, A sabe que B ha dicho algo creyendo que es falso, es decir,  sabe que B ha violado la máxima de cualidad.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿Qué está haciendo B?</txt>
+<teoria>(Cuando alguien viola la máxima de cualidad sin que los demás sepan que la está violando, está mintiendo.
+ Cuando alguien viola la máxima de cualidad, de modo que los demás se den cuenta de que la está violando está implicando más información. Es decir, está comunicando algo más o algo distinto a lo que ha dicho explícitamente)</teoria>
+<explain>Según lo dicho en la pregunta 6, A sabe que B está violando la máxima de cualidad. Por lo tanto, B está implicando algo. Además -10 grados centígrados es una temperatura que se considera muy fría por lo que sería absurdo que B intentara hacer creer a A que hace calor.</explain>
+<respuestas>
+<respuesta right="0">B está mintiendo</respuesta>
+<respuesta right="1">B está implicando algo</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="8">
+<txt>¿Qué tendría que decir B para respetar la máxima de cualidad? Elije una de las siguientes opciones:</txt>
+<teoria></teoria>
+<explain>La "máxima de cualidad"   dicta que debemos decir solamente cosas que creemos que son verdad. B cree que hace frío.  Por lo tanto, al decir “hace frío” estaría respetando la máxima de cualidad.</explain>
+<respuestas>
+<respuesta right="1">Hace frío</respuesta>
+<respuesta right="0">Hace calor</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="9">
+<txt>Teniendo en cuenta que lo implicado por B debe respetar la máxima de cualidad, ¿Qué está implicando B?</txt>
+<teoria></teoria>
+<explain>Acabamos de decir, que “hace frío” respeta la máxima, y “hace calor” no la respeta. Por tanto, está implicando que hace frío.</explain>
+<respuestas>
+<respuesta right="1">B está implicando que hace frío</respuesta>
+<respuesta right="0">B está implicando que hace calor</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="10">
+<txt>¿Qué crees que se ajusta más a lo que está comunicando B?</txt>
+<teoria></teoria>
+<explain>En este caso, B está aparentemente violando la máxima de cualidad. Como para A, es evidente que la está violando, debemos suponer que en realidad intenta comunicar a A otra cosa. Lo que nos intenta comunicar es lo contrario de lo que ha dicho, esto se llama ironía.</explain>
+<respuestas>
+<respuesta right="1">Está comunicando irónicamente a A que hace frío</respuesta>
+<respuesta right="0">B está comunicando que hace calor</respuesta>
+<respuesta right="0">Otra cosa (especifica cual)</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="2" cat="3" dif="1">
+<img>imagen2.jpg</img>
+<context>A y B se encuentran a la salida de clase. A, que está libre por la tarde, tiene ganas de ir al cine. Como A no quiere ir solo al cine invita a B para que vaya con él.</context>
+<explain>a través de la pregunta “¿Vienes al cine esta tarde?”, A invita a B a ir al cine con él. La invitación ha de ser aceptada o rechazada por B, por tanto A espera una respuesta de sí o no.</explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Qué tipo de respuesta espera A al preguntar a B si viene al cine esta tarde?</txt>
+<teoria></teoria>
+<explain>a través de la pregunta “¿Vienes al cine esta tarde?”, A invita a B a ir al cine con él. La invitación ha de ser aceptada o rechazada por B, por tanto A espera una respuesta de sí o no.</explain>
+<respuestas>
+<respuesta right="1">A busca una respuesta de sí o no</respuesta>
+<respuesta right="0">A quiere saber cuales son las tareas de B</respuesta>
+<respuesta right="0">otra cosa (justificalá en el cuadro de texto)</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿Ha respondido B explícitamente al tipo de respuesta que busca A?</txt>
+<teoria></teoria>
+<explain>B no ha dado el tipo de respuesta que busca A. Como hemos dicho en la pregunta 1, A busca una respuesta de sí o no; sin embargo, la respuesta de B, “tengo que estudiar”, no dice explícitamente ni que sí ni que no.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿B ha respondido explícitamente a lo que pregunta A o a otra cosa?</txt>
+<teoria></teoria>
+<explain>Sabemos que B no ha dado el tipo de respuesta que busca A. Por tanto, B no ha respondido explícitamente a la pregunta de A (mirar pregunta 2). Esto es así porque la respuesta “tengo que estudiar” no responde explícitamente a la invitación de A, para hacerlo debería haber respondido con un sí o con un no. Es decir, aceptando o rechazando la invitación.</explain>
+<respuestas>
+<respuesta right="0">Ha respondido a A</respuesta>
+<respuesta right="1">A otra cosa</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿B viola la máxima de relación con lo que ha dicho explícitamente (“tengo que estudiar”)?</txt>
+<teoria>[Teniendo en cuenta que la máxima de relación nos obliga a ser relevantes, es decir, a responder a lo que se nos pregunta y no a otra cosa]</teoria>
+<explain>En la anterior pregunta hemos dicho que B responde a otra cosa y no a lo que A está preguntando. B ha dicho que tiene que estudiar pero no ha respondido ni que sí ni que no a la pregunta de A. Por tanto, es evidente que B está violando la máxima de relación.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿Sabe A que B no ha respondido a lo que preguntaba sino a otra cosa?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que A busca una respuesta de Sí o no. A sabe que B ha respondido “tengo que estudiar”. Por tanto A sabe que B no ha respondido explícitamente a lo que ha preguntado sino a otra cosa.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿A sabe que B ha violado la máxima de relación?</txt>
+<teoria></teoria>
+<explain>[Sabemos que cuando alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está tratando de comunicar algo más o distinto a lo dicho explícitamente. Decimos entonces que está implicando algo y que sigue siendo cooperativo. Si alguien viola una máxima sin que la otra persona se de cuenta, entonces está dejando de ser cooperativo y no está implicando nada]</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Teniendo esto en cuenta, ¿B está tratando de comunicar a A algo más o distinto a lo dicho explícitamente con las palabras “tengo que estudiar”?</txt>
+<teoria>(Cuando alguien viola la máxima de cualidad sin que los demás sepan que la está violando, está mintiendo.
+ Cuando alguien viola la máxima de cualidad, de modo que los demás se den cuenta de que la está violando está implicando más información. Es decir, está comunicando algo más o algo distinto a lo que ha dicho explícitamente)</teoria>
+<explain>Según lo dicho en las preguntas anteriores, B ha violado la máxima de relación y A sabe que B ha violado la máxima de relación. Esto es obvio para ambos. Además sabemos que si alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está implicando algo. Según esto B está tratando de comunicar algo más o distinto a lo dicho mediante las palabras textuales “tengo que estudiar”.</explain>
+<respuestas>
+<respuesta right="1">Sí, está implicando algo</respuesta>
+<respuesta right="0">No, ha dejado de ser cooperativo</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="3" cat="1" dif="1">
+<img>imagen3.jpg</img>
+<context></context>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>Presta atención a la respuesta de B. ¿Ha dicho B si echará de menos a Juan?</txt>
+<teoria></teoria>
+<explain>B ha dicho explícitamente que echará de menos a Juan.</explain>
+<respuestas>
+<respuesta right="1">Si, ha dicho que echará de menos a Juan</respuesta>
+<respuesta right="0">Sí, ha dicho que no echará de menos a Juan</respuesta>
+<respuesta right="0">No, no ha dicho si echará de menos a Juan o no.</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿Ha dicho B si echará de menos a Pedro?</txt>
+<teoria></teoria>
+<explain>B no ha dicho nada acerca de Pedro.</explain>
+<respuestas>
+<respuesta right="0">Si, ha dicho que echará de menos a Pedro</respuesta>
+<respuesta right="0">Sí, ha dicho que no echará de menos a Pedro</respuesta>
+<respuesta right="1">No, no ha dicho si echará de menos a Pedro o no.</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿crees que B ha respondido a la pregunta de A? Es decir, ¿crees que B le ha dado a A toda la información que A le pedía?</txt>
+<teoria></teoria>
+<explain>B sólo ha dado una parte de la información que le pedían. Ha dicho que echará de menos a Juan, pero no ha dicho si echará de menos a Pedro.</explain>
+<respuestas>
+<respuesta right="0">Si, B ha dado toda la información que A le pedía</respuesta>
+<respuesta right="1">No , B no ha dado toda la información que A le pedía</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>Teniendo en cuenta lo que ha dicho B, ¿está respetando la máxima de cantidad?</txt>
+<teoria>La máxima de cantidad dicta que debemos dar toda la información que sea necesaria, y no más de la necesaria, para seguir conversando correctamente.</teoria>
+<explain>En esta ocasión B debería dar toda la información que A le pedía, o informarle de que no quiere o no puede dársela. Sin embargo, no ha dado toda la información, por lo que B está violando la máxima de cantidad.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No, porque no está dando toda la información necesaria</respuesta>
+<respuesta right="0">No, porque está dando más información de la necesaria</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿Crees que A se ha dado cuenta de que B ha violado la máxima de cantidad?</txt>
+<teoria></teoria>
+<explain>Sí, porque cualquier persona que escuche a B se dará cuenta de que no ha dicho si echará de menos a Pedro.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿Crees que B está implicando algo?</txt>
+<teoria>Cuando una persona viola la máxima de cantidad de modo que los demás se den cuenta de que la ha violado y sin explicar por qué la ha violado, esa persona está implicando algo, es decir, está comunicando más información.</teoria>
+<explain>Ya hemos dicho que B está violando una máxima y que cualquiera –incluido A- se daría cuenta de ello. Además, B no ha dicho que no pueda o no quiera responder a la pregunta. Por tanto, B está implicando algo, es decir, está comunicando más información.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="4" cat="4" dif="1">
+<img>imagen4.jpg</img>
+<context>La señora A y el señor B salen a pasear con sus tres hijos pequeños.</context>
+<explain>“H.E.L.A.D.O.S.” se ha escrito con mayúsculas y puntos para indicar que B está deletreando la palabra “helados”. Es decir, lo dicho literalmente por B es: “Sí, pero veto los hache, e, ele, a, de, o, ese.</explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>Teniendo en cuenta que ser “claro” significa decir las cosas de la manera que resulte más fácil de entender, ¿Cuál de las siguientes frases te parece más clara?</txt>
+<teoria></teoria>
+<explain>Normalmente al comunicarnos no deletreamos las palabras a no ser que sea estrictamente necesario. Cuando deletreamos lo hacemos por motivos excepcionales;por ejemplo, enseñarle a alguien como se escribe algo. Esto es debido a que deletrear supone un invertir más tiempo en decir algo y dificulta la comprensión de quien escucha. Por ello es más clara la expresión “Sí, pero veto los helados” que “sí, pero veto los H.E.L.A.D.O.S”.</explain>
+<respuestas>
+<respuesta right="0">“Sí, pero  veto los H.E.L.A.D.O.S.”</respuesta>
+<respuesta right="1">“Sí, pero veto los helados”</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿B está siendo todo lo claro que podría ser al responder a A?</txt>
+<teoria></teoria>
+<explain>En la pregunta anterior hemos dicho que “Sí, pero veto los helados”, es una expresión más clara que “Sí, pero veto los H.E.L.A.D.O.S.”. Es obvio entonces que hay al menos una expresión que es más clara que “Sí, pero veto los H.E.L.A.D.O.S.”. Por tanto, B podría haber sido más claro.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>Teniendo esto en cuenta, ¿Ha respetado B la máxima de modo al decir: “Sí, pero veto los H.E.L.A.D.O.S.”?</txt>
+<teoria>La máxima de modo nos obliga a ser claros al hablar</teoria>
+<explain>En la pregunta número 1 hemos dicho que deletrear fuera de las ocasiones excepcionales donde es requerido quita claridad a lo que decimos. Además sabemos que hay otras expresiones que podía haber dicho B que son más claras (“Si, pero veto los helados”). Por ello está claro que B no está respetando la máxima de modo con su respuesta.</explain>
+<respuestas>
+<respuesta right="0">Si, B ha dado toda la información que A le pedía</respuesta>
+<respuesta right="1">No , B no ha dado toda la información que A le pedía</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿Crees que A es consciente de que B podría haber sido más claro al decir “Sí, pero veto los H.E.L.A.D.O.S.” ?</txt>
+<teoria></teoria>
+<explain>Sabemos que las personas no deletrean a no ser que sea necesario ya que quita claridad a lo que dicen. Debemos de suponer que A es como el resto de las personas y en su vida cotidiana habla sin deletrear cada una de las palabras que dice. Una prueba de ello es que ha hecho una pregunta a B sin deletrear, por tanto A es consciente de que hablar sin deletrear, salvo en contextos excepcionales, es ser más claro. Y dado que B ha deletreado, A sabe que B podría no haber sido más claro.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿A sabe que B ha violado la máxima de modo con su respuesta?</txt>
+<teoria>La máxima de cantidad dicta que debemos dar toda la información que sea necesaria, y no más de la necesaria, para seguir conversando correctamente.</teoria>
+<explain>A sabe que B no ha sido claro al deletrear “H.E.L.A.D.O.S.”. Y como la máxima de modo nos obliga a ser claros al hablar, es obvio para A, que B ha violado la máxima de modo.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>Sabiendo esto, ¿Está diciendo B algo distinto o a mayores de lo dicho literalmente?</txt>
+<teoria>Sabemos que cuando alguien viola una máxima de tal manera que el que escucha se da cuenta de que la ha violado, está tratando de implicar algo. Es decir, está queriendo decir algo más o distinto a lo dicho literalmente.</teoria>
+<explain>Hemos dicho que A sabe que B ha violado la máxima de modo. Por ello, hemos de suponer que B está implicando algo y que B no ha dejado de ser cooperativo. B está, por tanto, intentando decir algo más o distinto a lo dicho mediante las palabras “Sí, pero veto los H.E.L.A.D.O.S.”</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="5" cat="3" dif="1">
+<img>imagen5.jpg</img>
+<context>Ana y Leo han acordado reunirse en la puerta de una cafetería. Tras encontrarse en la puerta de la cafetería (tal como habían acordado), se produce la siguiente conversación entre Ana y Leo.</context>
+<explain>Ana ha preguntado a Leo si prefiere que ambos se queden en la calle o que entren en la cafetería. Esto quiere decir que Ana ha pedido a Leo que escoja cual de las siguientes dos opciones prefiere. 1) quedarse en la calle, 2) entrar en la cafetería.</explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>Fijate en la pregunta de  Ana. ¿Qué tipo de respuesta espera de Leo?</txt>
+<teoria></teoria>
+<explain>Ana ha preguntado a Leo si prefiere que ambos se queden en la calle o que entren en la cafetería. Esto quiere decir que Ana espera que Leo escoja cual de las siguientes dos opciones prefiere. 1) quedarse en la calle, 2) entrar en la cafetería.</explain>
+<respuestas>
+<respuesta right="1">Espera que Leo decida cual de las dos opciones prefiere: si que ambos se queden en 	la calle, o que entren en la cafetería</respuesta>
+<respuesta right="0">Ana quiere saber si Leo tiene frío</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>Fijate en las palabras literales de Leo, ¿Ha dado Leo el tipo de respuesta que busca Ana?</txt>
+<teoria></teoria>
+<explain>Leo no ha dado el tipo de respuesta que busca Ana. Como hemos dicho en la pregunta 1, Ana espera que Leo escoja cual de las dos opciones prefiere (si quedarse en la calle o entrar en el bar). Sin embargo, la respuesta de Leo, “tengo frío”, no dice explícitamente cuál de las dos opciones prefiere.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿Ha respondido Leo explícitamente a lo que preguntaba Ana o a otra cosa?</txt>
+<teoria></teoria>
+<explain>Sabemos que Leo no ha dado el tipo de respuesta que buscaba Ana. Por lo tanto, Leo no ha respondió explícitamente a Ana sino  que ha dicho otra cosa.</explain>
+<respuestas>
+<respuesta right="0">Ha respondido a Ana</respuesta>
+<respuesta right="1">A otra cosa</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿Leo está violando la máxima de relación con lo que ha respondido explícitamente a Ana (“tengo frío”)?</txt>
+<teoria>Teniendo en cuenta que la máxima de relación nos obliga a ser relevantes, es decir, a responder a lo que se nos pregunta y no a otra cosa</teoria>
+<explain>Hemos dicho que Leo ha respondido a otra cosa distinta a lo que preguntaba Ana. Por tanto, es evidente que Leo ha violado la máxima de relación</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿Sabe Ana que Leo no ha respondido a lo que le preguntaba?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que Ana busca con su pregunta que Leo escoja cual de las dos opciones prefiere: quedarse en la calle o entrar en la cafetería. Ana sabe que Leo ha respondido “yo tengo frío”. Por tanto, Ana sabe que Leo no ha respondido explícitamente a lo que Ana preguntaba sino a otra cosa.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿Sabe Ana que Leo ha violado la máxima de relación?</txt>
+<teoria></teoria>
+<explain>Dado que la máxima de relación nos obliga a ser relevantes, es decir, a responder a lo que se nos pregunta y no a otra cosa. Y teniendo en cuenta que Ana sabe que Leo no ha respondido a lo que preguntaba sino a otra cosa, es evidente para Ana que Leo ha violado la máxima de relación.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Teniendo esto en cuenta, ¿Leo está tratando de comunicar a Ana algo más o distinto a lo dicho explícitamente con las palabras “yo tengo frío”?</txt>
+<teoria>Sabemos que cuando alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está tratando de comunicar algo más o distinto a lo dicho explícitamente; decimos entonces que esa persona está implicando algo y que sigue siendo cooperativo. Si alguien viola una máxima sin que la persona con quien habla se de cuenta, entonces está dejando de ser cooperativo y no está implicando nada</teoria>
+<explain>Según lo dicho en las preguntas  anteriores, Leo ha violado la máxima de relación y Ana sabe que Leo ha violado la máxima de relación. Esto es obvio para ambos. Además sabemos que si alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está implicando algo. Según esto Leo está tratando de comunicar a Ana algo más o distinto a lo dicho mediante las palabras textuales “yo tengo frío”.</explain>
+<respuestas>
+<respuesta right="1">Sí, está implicando algo</respuesta>
+<respuesta right="0">No, ha dejado de ser cooperativo</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="6" cat="1" dif="1">
+<img>imagen6.jpg</img>
+<context>Ana tiene 10 ejercicios de matemáticas como deberes para el día siguiente.</context>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Ha dicho Ana si ha terminado alguna cantidad de ejercicios?</txt>
+<teoria></teoria>
+<explain>Ana ha dicho que ha terminado 4 ejercicios. Por lo tanto si ha dado algún dato acerca de la cantidad de ejercicios que hay terminado.</explain>
+<respuestas>
+<respuesta right="1">Sí, ha dicho que ha terminado 4 ejercicios</respuesta>
+<respuesta right="0">No, no ha dicho nada acerca de la cantidad de ejercicios que ha terminado</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>Presta atención a la respuesta explícita de Ana, ¿Ha dicho Ana si ha terminado los 10  ejercicios?</txt>
+<teoria></teoria>
+<explain>Ana ha dicho que ha terminado 4 ejercicios pero no ha dicho si ha terminado los 10 ejercicios o no.</explain>
+<respuestas>
+<respuesta right="0">Sí, ha dicho que ha terminado los 10 ejercicios</respuesta>
+<respuesta right="1">No, no ha dicho si ha terminado los 10 ejercicios o no</respuesta>
+<respuesta right="0">Sí, ha dicho que no ha terminado los 10 ejercicios</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿Ha respondido Ana a la pregunta de Juan? Es decir, ¿Crees que Ana ha dado a Juan toda la información que pedía?</txt>
+<teoria></teoria>
+<explain>Ana sólo ha dado una parte de la información que Juan le pedía. Ha dicho que ha terminado 4 ejercicios pero no ha dicho si ha terminado los 10 ejercicios o no.</explain>
+<respuestas>
+<respuesta right="0">Si, Ana ha dado a Juan toda la información que le pedía</respuesta>
+<respuesta right="1">No, Ana no ha dado a Juan toda la información que pedía</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>Teniendo en cuenta lo que ha dicho Ana, ¿está respetando la máxima de cantidad?</txt>
+<teoria></teoria>
+<explain>En esta ocasión  Ana debería dar toda la información que Juan le pedía, o informarle de que no quiere o no puede dársela. Sin embargo, no ha dado toda la información (no ha dicho si ha terminado los 10 ejercicios o no), por lo tanto, Ana está violando la máxima de cantidad.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No, porque no ha dado toda la información necesaria</respuesta>
+<respuesta right="0">No, porque está dando más información de la necesaria</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿Crees que Juan se ha dado cuenta de que Ana ha violado la máxima de cantidad?</txt>
+<teoria></teoria>
+<explain>Sí, porque cualquier persona que escuche a Ana se dará cuenta de que Ana no ha dicho si ha terminado los 10 ejercicios o no.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿Crees que Ana está implicando algo?</txt>
+<teoria>Cuando una persona viola una máxima de modo que los demás se den cuenta de que la ha violado y sin explicar por qué la ha violado, esa persona está implicando algo, es decir, está comunicando más información </teoria>
+<explain>Hemos dicho que Ana está violando la máxima de cantidad y que cualquiera- incluido Juan- se dará cuenta de ello. Además, Ana no ha dicho que no quiera o no pueda responder a lo que Juan le pregunta. Por tanto, Ana está implicando algo, es decir, está comunicando más información.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="9" cat="2" dif="2">
+<img>imagen9.jpg</img>
+<context></context>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Ha respondido Pepe a lo que ha preguntado Juan o a otra cosa?</txt>
+<teoria></teoria>
+<explain>Juan ha preguntado a Pepe si le gusta el reloj nuevo que se ha comprado. Esto requiere une respuesta de sí o no. Sí, me gusta tu reloj, o No me gusta tu reloj. Sin embargo, Pepe ha respondido alagando los pantalones de Juan. Por lo tanto no ha respondido a la pregunta de Pepe sino a otra cosa.</explain>
+<respuestas>
+<respuesta right="0">Juan ha respondido a Pepe</respuesta>
+<respuesta right="1">Juan no ha respondido a Pepe, ha respondido otra cosa</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿Ha dado Pepe la información necesaria a Juan?</txt>
+<teoria></teoria>
+<explain>Pepe ha dicho más de lo necesario porque ha respondido algo a mayores de lo que Juan le preguntaba. Pepe también ha dicho menos de lo necesario porque ni siquiera ha respondido a lo que Juan le preguntaba.</explain>
+<respuestas>
+<respuesta right="0">Sí, ha dado justo la información necesaria</respuesta>
+<respuesta right="1">No, ha dicho más de lo necesario</respuesta>
+<respuesta right="1">No, ha dicho menos de lo necesario</respuesta>
+<respuesta right="0">No lo sé
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿Piensas que Pepe ha dicho algo que cree que es falso?</txt>
+<teoria></teoria>
+<explain>No hay modo de saber si Pepe ha dicho algo que cree falso ya que ni siquiera sabemos cómo son los pantalones de Juan </explain>
+<respuestas>
+<respuesta right="0">Sí porque Pepe no piensa que los pantalones de Juan sean bonitos</respuesta>
+<respuesta right="0">No porque Pepe piensa que los pantalones de Juan son bonitos</respuesta>
+<respuesta right="1">No hay modo de saberlo</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿Ha sido Pepe claro al hablar? Es decir, ¿Se pueden entender fácilmente las palabras de Pepe?</txt>
+<teoria></teoria>
+<explain>La emisión de Pepe se entiende sin ningún problema</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>Según lo dicho hasta ahora, ¿Qué máximas está Pepe violando?</txt>
+<teoria></teoria>
+<explain>Según lo dicho en las anteriores preguntas Pepe ha dado más información de la necesaria y no ha respondido a Juan. Mientras no sabemos si cree verdadero lo que ha dicho y sabemos que ha sido claro. Según la definición de las máximas, Pepe ha violado flagrantemente las máximas de cantidad y relación.</explain>
+<respuestas>
+<respuesta right="1">Cantidad</respuesta>
+<respuesta right="0">Cualidad</respuesta>
+<respuesta right="1">Relación</respuesta>
+<respuesta right="0">Modo</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>Sabe Juan si Pepe está violando alguna máxima?</txt>
+<teoria></teoria>
+<explain>Sí, lo sabe porque es evidente para Juan que Pepe no ha dado la información que pedía y que ha respondido otra cosa distinta </explain>
+<respuestas>
+<respuesta right="0">Sí, sabe que Pepe no ha violado una o más máximas</respuesta>
+<respuesta right="1">Sí, sabe que Pepe ha violado una o más máximas</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Según lo dicho hasta ahora, ¿Está Pepe implicando algo (diciendo algo más o distinto a lo dicho literalmente) o ha dejado de ser cooperativo?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que Juan sabe que Pepe ha violado alguna máxima. Además sabemos que cuando una persona viola una máxima de tal modo que los demás se den cuenta está diciendo algo más o distinto a lo dicho literalmente. Por lo tanto, Pepe está implicando algo</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="10" cat="2" dif="2">
+<img>imagen10.jpg</img>
+<context></context>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿A qué botella de agua se está refiriendo Miguel?</txt>
+<teoria></teoria>
+<explain>Miguel se está refiriendo a la botella de agua que hay al lado de Enrique, es decir, a la que se ve en la imagen. Si se estuviera refiriendo a otra botella, daría información más concreta; al hablar simplemente de “la botella”, debemos pensar que se está refiriendo a la más cercana</explain>
+<respuestas>
+<respuesta right="1">A la botella que hay al lado de Enrique</respuesta>
+<respuesta right="0">A una botella de agua que hay en casa de Enrique</respuesta>
+<respuesta right="0">A ninguna de las anteriores</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿Enrique puede pasarle la botella de agua a Miguel?</txt>
+<teoria></teoria>
+<explain>Enrique tiene la botella al alcance de su mano, por lo que parece evidente que se la puede pasar a Migue.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No </respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿Miguel sabe que Enrique puede pasarle la botella de agua?</txt>
+<teoria></teoria>
+<explain>Miguel puede ver a Enrique, por lo que se ha tenido que dar cuenta de que puede pasarle la botella de agua.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿Crees que Miguel quiere que Enrique le diga si puede pasarle la botella de agua?</txt>
+<teoria></teoria>
+<explain>No, porque Miguel ya conoce la respuesta a esa pregunta</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>Teniendo esto en cuenta, ¿crees que la pregunta de Miguel es relevante?</txt>
+<teoria></teoria>
+<explain>No es relevante ya que no aporta nada</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿Miguel está respetando la máxima de relación?</txt>
+<teoria></teoria>
+<explain>Acabamos de decir que la pregunta de Miguel no es relevante. Por tanto, Miguel está violando la máxima de relación. </explain>
+<respuestas>
+<respuesta right="0">Sí, la está respetando</respuesta>
+<respuesta right="1">No, la está violando</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>¿Crees que Enrique se ha dado cuenta de que Miguel está violando la máxima de Relación?</txt>
+<teoria></teoria>
+<explain>Es evidente que Miguel conoce la respuesta a su pregunta. Por tanto, también es evidente que Enrique ha de conocerla por lo que Enrique sabe que Miguel está violando la máxima de relación </explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="8">
+<txt>La pregunta de Miguel, ¿Ayudará a intercambiar la información que requiere el intercambio comunicativo?</txt>
+<teoria></teoria>
+<explain>Miguel está formulando una pregunta, por lo que no está aportando ninguna información. Además, aunque dicha pregunta podría ayudar a intercambiar nueva información (la respuesta), en este caso la respuesta ya es conocida, por lo que la información que aportaría no sería necesaria. </explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No, porque la pregunta no aporta nueva información</respuesta>
+<respuesta right="1">No, porque la respuesta a esa pregunta no aporta nueva información</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="9">
+<txt>¿Miguel está respetando la máxima de cantidad?</txt>
+<teoria></teoria>
+<explain>no, ya que no está aportando ningún tipo de información útil</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No </respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="10">
+<txt>¿Enrique se habrá dado cuenta de que Miguel está violando la máxima de cantidad?</txt>
+<teoria></teoria>
+<explain>Enrique se tiene que haber dado cuenta de que la pregunta de Miguel no ayuda a conseguir información útil</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No </respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="11">
+<txt>Teniendo en cuenta todo lo dicho hasta ahora, ¿Crees que Miguel está implicando algo, o ha dejado de ser cooperativo?</txt>
+<teoria></teoria>
+<explain>Miguel está violando varias máximas con sus palabras de forma evidente, por lo que debemos suponer que está implicando algo</explain>
+<respuestas>
+<respuesta right="1">Miguel está implicando algo</respuesta>
+<respuesta right="0">Miguel ha dejado de cooperar </respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+</Ejercicios>

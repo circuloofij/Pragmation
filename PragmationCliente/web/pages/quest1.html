@@ -1,0 +1,278 @@
+<div class="wrap" style="width:90%">
+  <div id="desc" class="descPregunta">
+  </div>
+</div>  
+<div id="contenedorimagenpadre">
+  <div class="wrap" id="imgEx" style="width:95%;margin-top:10px;">
+    <img id ="exImg" src="" alt="image" style="position:relative;z-index:-1;max-width:90%;margin: 0 auto;left: 50%;margin-left: -27%;">      
+    <div id="divExp" style="float:right;width:40%;color:#00000000;visibility:hidden;height: 400px;z-index: 3;"></div>                 
+  </div> 
+</div>  
+
+<div class="wrap" id="tex" style="color:white">
+</div>      
+
+<div class="wrap">
+  <div id="divcomenzar" style="text-align:center ">         
+    <input type="submit" class="button_comenzar" value="Comenzar" id="bComenzar" />         
+  </div>
+</div>
+<div class="wrap" id="divpreguntas" style="color:white;visibility:hidden;">
+  
+</div>
+</div>
+<div id="scripts">
+</div>
+<div id="dialog-modal" title="Explicación">
+</div>
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+$(function() {
+$( "#dialog-modal" ).dialog({
+  autoOpen: false,
+modal: true,
+draggable: false
+});
+});
+  $("#bComenzar").click(function(){
+    jsonTiempoini = new Date();
+    $(this).css("visibility","hidden");
+    $("#divpreguntas").css("visibility","visible");
+  });
+  var imgwidth = $("#exImg").width();
+  var imgheight= $("#exImg").height();
+  $("#divIzq").width(imgwidth*40/100);
+  $("#divIzq").height(imgheight);
+  $("#divCen").width(imgwidth*20/100);
+  $("#divCen").height(imgheight);
+  $("#divDer").width(imgwidth*40/100);
+  $("#divDer").height(imgheight);
+  $("#divExp").click(function(){
+    $("#dialog-modal").html("<p>"+Ejercicios[EjActual].explain+"</p>");
+  });
+
+  $("#bRespuesta2").click(function(){
+    $(this).removeClass("button_respuesta");
+    $(this).addClass("button_acertada");
+    desactivarClick();
+
+  });
+  $("#bRespuesta1").click(function(){
+    $(this).removeClass("button_respuesta");
+    $(this).addClass("button_fallada");
+    $("#bRespuesta2").removeClass("button_respuesta");
+    $("#bRespuesta2").addClass("button_acertada");
+    desactivarClick();
+  });
+  $("#bRespuesta3").click(function(){
+    $(this).removeClass("button_respuesta");
+    $(this).addClass("button_fallada");
+    $("#bRespuesta2").removeClass("button_respuesta");
+    $("#bRespuesta2").addClass("button_acertada");
+    desactivarClick();
+  });
+  
+});
+
+
+</script>
+
+<script>
+var EjActual = 0;
+var PregActual = 0;
+var tiempoTotal=0;
+var jsonTiempoini=0;e
+var jsonPreguntas=0;
+var jsonAcertadas=0;
+var jsonEjercicios = new Array();
+function desactivarClick(){
+  $("img.imgres").css("visibility","visible");
+  $("#bContinue").css("visibility","visible");
+  $("#bRespuesta1").unbind("click");
+  $("#bRespuesta2").unbind("click");
+  $("#bRespuesta3").unbind("click");
+}
+function postData(){
+  var obj = "{'idPaciente': 'JSMG1437','ejercicios': [{'idCategoria': "+jsonEjercicios[0].cat+",'idEjercicio': "+jsonEjercicios[0].id+",'segundos': "+jsonEjercicios[0].segundos+"}],'numContestadas': "+jsonPreguntas+",'numAcertadas': "+jsonAcertadas+"}";
+$.ajax(
+    {
+        url: 'http://130.206.82.202:5500/pragmation/patient',
+        type: 'POST',
+        data: obj,
+        contentType: 'application/json'
+    });
+}
+function mostrar(num){
+  $("#desc").html("<p>"+Ejercicios[num].context+"</p>");
+  $("#exImg").attr("src","web/images/"+Ejercicios[num].img);
+  $("#divExp").css("width",Ejercicios[num].prc+"%");
+var s = document.createElement("script");
+s.type = "text/javascript";
+for (var i=0;i<Ejercicios[num].preguntas.length;i++)
+{ 
+
+  var visible="none";
+  if(i==0){
+    visible="block"
+  }
+var code = "<div id='pregunta"+i+"' style='display:"+visible+"'>";
+code+= "<p class='pregunta'>"+Ejercicios[num].preguntas[i].num+".-"+Ejercicios[num].preguntas[i].txt+"</p>";
+code+="<div id='respuestas' style='text-align:center;'>";
+
+var unbind="";
+for (var j=0;j<Ejercicios[num].preguntas[i].respuestas.length;j++){
+
+  var img="cross.png";
+  var resolver="";
+  var correct="";
+  if(Ejercicios[num].preguntas[i].respuestas[j].correct==1){
+    img="check.png";
+    correct="c";
+  }else{
+    correct="f";
+  }
+  resolver+="$('.azul').removeClass('azul');$('#bPreg"+i+"Respuesta"+j+"').addClass('azul');";
+code+="<input type='submit' class='button_respuesta "+correct+"' value='"+Ejercicios[num].preguntas[i].respuestas[j].txt+"' id='bPreg"+i+"Respuesta"+j+"'/> <img id='img"+i+"Res"+j+"' class='imgres' src='web/images/"+img+"' alt='image'>";
+
+s.innerHTML += "$('#bPreg"+i+"Respuesta"+j+"').click(function(){"+resolver+" if(Ejercicios[EjActual].preguntas[PregActual].num==Ejercicios[EjActual].preguntas.length){if((EjActual+1)==Ejercicios.length){$('#bContinue').attr('value','Terminar');}else{$('#bContinue').attr('value','Siguiente Ejercicio');}}$('#bCorregir').css('display','block');});";
+unbind+="$('#bPreg"+i+"Respuesta"+j+"').unbind('click');$('#img"+i+"Res"+j+"').css('visibility','visible');$('#bPQ"+i+"').css('display','inline');";
+}
+s.innerHTML += "function unbind"+i+"(){"+unbind+"}";
+s.innerHTML+="$('#bPQ"+i+"').click(function(){$('#dialog-modal').dialog('open');$('#dialog-modal').html('<p>'+Ejercicios["+num+"].preguntas["+i+"].explain+'</p>');});";
+code+="<input type='text' id='txt"+i+"' style='width: 75%; margin-top: 20px; padding: 10px; margin-right: 20px;' placeholder='Justifica tu respuesta'>";
+code+="<input type='submit' class='button_respuesta morado' style='display:none;margin-right: 20px;' value='Explicación' id='bPQ"+i+"'/>";
+code+="</div>";
+$("#divpreguntas").append(code);
+}
+$("#divpreguntas").append("<input type='submit' class='none button_corregir naranja' value='Verificar respuesta' id='bCorregir' />");
+$("#divpreguntas").append("<input type='submit' class='button_continue' value='Siguiente pregunta' id='bContinue' />");
+s.innerHTML += "$('#bCorregir').click(function(){var func = 'unbind'+PregActual;var fn = window[func];fn();$('#txt'+PregActual).attr('disabled','disabled');$('#bContinue').css('visibility','visible');$(this).css('display','none');if($('.azul').hasClass('c')){jsonAcertadas++;$('.azul').addClass('button_acertada');$('.azul').removeClass('azul');}else{$('.azul').addClass('button_fallada');$('.azul').removeClass('azul');}});";
+
+s.innerHTML += "$('#bContinue').click(function(){if($(this).attr('value')=='Siguiente pregunta'){PregActual++;$(this).css('visibility','hidden');$('#pregunta'+PregActual).css('display','block');}if($(this).attr('value')=='Siguiente Ejercicio'){EjActual++;$('#bComenzar').css('visibility','visible');$('#divpreguntas').css('visibility','hidden');$('#divpreguntas').html('');$('#scripts').html('');mostrar(EjActual);}if($(this).attr('value')=='Terminar'){var tiempoFin = new Date();var diff = new Date(tiempoFin.getTime()-jsonTiempoini.getTime());postData();$('#contenido').load('web/pages/Ejercicios.html');}});";
+$("#scripts").append(s);
+}
+var Ejercicios = new Array();
+function fillExercice(cat){
+  $.ajax({
+    type: "GET",
+    url: "xml/Ejercicios.xml",
+    dataType: "xml",
+    success: function(xml){
+    $(xml).find('Ejercicio').each(function(){
+      
+      if($(this).attr("cat")==cat){
+      var Ejercicio = new Object();
+      Ejercicio.context=$(this).find("context").text();
+      Ejercicio.explain=$(this).find("explain").text();
+      Ejercicio.img=$(this).find("img").text();
+      Ejercicio.prc=$(this).find("percent").text();
+      Ejercicio.preguntas = new Array();
+      var jsonEjercicio = new Object();
+      jsonEjercicio.id = $(this).attr("id");
+      jsonEjercicio.cat = cat;
+      jsonEjercicio.segundos=0;
+      jsonEjercicios.push(jsonEjercicio);
+      var c1 = 0;
+      $(this).find("pregunta").each(function(){
+        var pregunta = new Object();
+        pregunta.num = $(this).attr("num");
+        pregunta.txt = $(this).find("txt").text();
+        pregunta.teoria = $(this).find("teoria").text();
+        pregunta.explain = $(this).find("explain").text();
+        pregunta.respuestas = new Array();
+        var c2 = 0;
+        $(this).find("respuesta").each(function(){
+          var respuesta = new Object();
+          respuesta.correct = $(this).attr("right");
+          respuesta.txt = $(this).text();
+          pregunta.respuestas[c2] = respuesta;
+          c2++;
+        });
+        Ejercicio.preguntas[c1] = pregunta;
+        c1++;
+      });
+      jsonPreguntas+=Ejercicio.preguntas.length;
+      Ejercicios.push(Ejercicio);
+  }
+    });
+    try{
+    if(Ejercicios.length==0){
+      $("#contenido").load("web/pages/Ejercicios.html");
+        alert("no hay ejercicios para esa opción");
+        
+      }else{
+    mostrar(0);
+}
+}catch(e){}
+  },
+  error: function() {
+    alert("OcurriÃ³ un error mientras se procesaba el archivo XML.");
+  }
+  });
+}
+function fillExerciceDif(){
+  $.ajax({
+    type: "GET",
+    url: "xml/Ejercicios.xml",
+    dataType: "xml",
+    success: function(xml){
+    $(xml).find('Ejercicio').each(function(){
+      
+      if($(this).attr("dif")==2){
+      var Ejercicio = new Object();
+      Ejercicio.context=$(this).find("context").text();
+      Ejercicio.explain=$(this).find("explain").text();
+      Ejercicio.img=$(this).find("img").text();
+      Ejercicio.prc=$(this).find("percent").text();
+      Ejercicio.preguntas = new Array();
+      var jsonEjercicio = new Object();
+      jsonEjercicio.id = $(this).attr("id");
+      jsonEjercicio.cat = cat;
+      jsonEjercicio.segundos=0;
+      jsonEjercicios.push(jsonEjercicio);
+      var c1 = 0;
+      $(this).find("pregunta").each(function(){
+        var pregunta = new Object();
+        pregunta.num = $(this).attr("num");
+        pregunta.txt = $(this).find("txt").text();
+        pregunta.teoria = $(this).find("teoria").text();
+        pregunta.explain = $(this).find("explain").text();
+        pregunta.respuestas = new Array();
+        var c2 = 0;
+        $(this).find("respuesta").each(function(){
+          var respuesta = new Object();
+          respuesta.correct = $(this).attr("right");
+          respuesta.txt = $(this).text();
+          pregunta.respuestas[c2] = respuesta;
+          c2++;
+        });
+        Ejercicio.preguntas[c1] = pregunta;
+        c1++;
+      });
+      Ejercicios.push(Ejercicio);
+  }
+    });
+    try{
+      if(Ejercicios.length==0){
+        $("#contenido").load("web/pages/Ejercicios.html");
+        alert("no hay ejercicios para esa opciÃ³n");
+
+      }else{
+    mostrar(0);
+}
+}catch(e){}
+  },
+  error: function() {
+    alert("Ocurrió un error mientras se procesaba el archivo XML.");
+  }
+  });
+}
+
+  $("#divExp").click(function(){
+    $(this).html("<p>"+Ejercicios[EjActual].preguntas[PregActual].teoria+"</p>");
+    $(this).css("visibility","visible");
+  });
+</script>

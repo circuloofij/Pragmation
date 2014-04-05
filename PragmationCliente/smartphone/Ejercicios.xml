@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ejercicios>
+<Ejercicio id="1" cat="2" dif="1">
+<img>imagen1.jpg</img>
+<explain></explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Es verdadero lo que ha dicho explícitamente B? es decir, ¿es verdad que hace calor?</txt>
+<teoria></teoria>
+<explain>En el "contexto" hemos señalado que hace mucho frío. Además el termómetro marca -10 grados centígrados. Por ello, lo dicho explícitamente por B, es decir, que hace calor, es falso.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿B cree que hace calor?</txt>
+<teoria></teoria>
+<explain>Hemos dicho en el "contexto" que para A y B es evidente que hace frío, esto quiere decir que B sabe que hace frío. Además -10 grados centígrados es una temperatura que se considera fría; por lo tanto, B sabe que hace frío y sabe que no hace calor.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿A cree que hace calor?</txt>
+<teoria></teoria>
+<explain>Hemos dicho en el "contexto" que para A y B es evidente que hace frío, esto quiere decir que B sabe que hace frío. Además -10 grados centígrados es una temperatura que se considera fría; por lo tanto, A sabe que hace frío y sabe que no hace calor.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>Teniendo en cuenta que A y B saben que hace frío, ¿B está diciendo algo que ambos saben que es falso?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que A y B saben que hace frío. ESto implica que A y B saben que lo dicho por B es falso. ES decir, ambos saben que "¡Qué calor hace!" es falso.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>La "máxima de cualidad"   dicta que debemos decir solamente cosas que creemos que son verdad. Teniendo esto en cuenta, ¿B está respetando la máxima de cualidad o la está violando?</txt>
+<teoria></teoria>
+<explain>En la pregunta 4 hemos dicho que B sabe que está diciendo algo falso. Por ello, B está violando la máxima de cualidad</explain>
+<respuestas>
+<respuesta right="0">B está respetando la máxima de cualidad</respuesta>
+<respuesta right="1">B está violando la máxima de cualidad</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿A sabe que B está violando la máxima de cualidad?</txt>
+<teoria></teoria>
+<explain>A sabe que lo que ha dicho B es falso (lo hemos dicho antes)
+A sabe que B también sabe que es falso  porque A sabe que a -10 grados todo el mundo -incluido B- pensaría que hace frío. 
+Por tanto, A sabe que B ha dicho algo creyendo que es falso, es decir,  sabe que B ha violado la máxima de cualidad.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Teniendo en cuenta lo dicho hasta ahora, ¿Qué está haciendo B?</txt>
+<teoria>(Cuando alguien viola la máxima de cualidad sin que los demás sepan que la está violando, está mintiendo.
+ Cuando alguien viola la máxima de cualidad, de modo que los demás se den cuenta de que la está violando está implicando más información. Es decir, está comunicando algo más o algo distinto a lo que ha dicho explícitamente)</teoria>
+<explain>Según lo dicho en la pregunta 6, A sabe que B está violando la máxima de cualidad. Por lo tanto, B está implicando algo. Además -10 grados centígrados es una temperatura que se considera muy fría por lo que sería absurdo que B intentara hacer creer a A que hace calor.</explain>
+<respuestas>
+<respuesta right="0">B está mintiendo</respuesta>
+<respuesta right="1">B está implicando algo</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="8">
+<txt>¿Qué tendría que decir B para respetar la máxima de cualidad? Elije una de las siguientes opciones:</txt>
+<teoria></teoria>
+<explain>La "máxima de cualidad"   dicta que debemos decir solamente cosas que creemos que son verdad. B cree que hace frío.  Por lo tanto, al decir “hace frío” estaría respetando la máxima de cualidad.</explain>
+<respuestas>
+<respuesta right="1">Hace frío</respuesta>
+<respuesta right="0">Hace calor</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="9">
+<txt>Teniendo en cuenta que lo implicado por B debe respetar la máxima de cualidad, ¿Qué está implicando B?</txt>
+<teoria></teoria>
+<explain>Acabamos de decir, que “hace frío” respeta la máxima, y “hace calor” no la respeta. Por tanto, está implicando que hace frío.</explain>
+<respuestas>
+<respuesta right="1">B está implicando que hace frío</respuesta>
+<respuesta right="0">B está implicando que hace calor</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="10">
+<txt>¿Qué crees que se ajusta más a lo que está comunicando B?</txt>
+<teoria></teoria>
+<explain>En este caso, B está aparentemente violando la máxima de cualidad. Como para A, es evidente que la está violando, debemos suponer que en realidad intenta comunicar a A otra cosa. Lo que nos intenta comunicar es lo contrario de lo que ha dicho, esto se llama ironía.</explain>
+<respuestas>
+<respuesta right="1">Está comunicando irónicamente a A que hace frío</respuesta>
+<respuesta right="0">B está comunicando que hace calor</respuesta>
+<respuesta right="0">Otra cosa (especifica cual)</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+<Ejercicio id="2" cat="3" dif="1">
+<img>imagen2.jpg</img>
+<explain>a través de la pregunta “¿Vienes al cine esta tarde?”, A invita a B a ir al cine con él. La invitación ha de ser aceptada o rechazada por B, por tanto A espera una respuesta de sí o no.</explain>
+<percent>50</percent>
+<preguntas>
+<pregunta num="1">
+<txt>¿Qué tipo de respuesta espera A al preguntar a B si viene al cine esta tarde?</txt>
+<teoria></teoria>
+<explain>a través de la pregunta “¿Vienes al cine esta tarde?”, A invita a B a ir al cine con él. La invitación ha de ser aceptada o rechazada por B, por tanto A espera una respuesta de sí o no.</explain>
+<respuestas>
+<respuesta right="1">A busca una respuesta de sí o no</respuesta>
+<respuesta right="0">A quiere saber cuales son las tareas de B</respuesta>
+<respuesta right="0">otra cosa (justificalá en el cuadro de texto)</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="2">
+<txt>¿Ha respondido B explícitamente al tipo de respuesta que busca A?</txt>
+<teoria></teoria>
+<explain>B no ha dado el tipo de respuesta que busca A. Como hemos dicho en la pregunta 1, A busca una respuesta de sí o no; sin embargo, la respuesta de B, “tengo que estudiar”, no dice explícitamente ni que sí ni que no.</explain>
+<respuestas>
+<respuesta right="0">Sí</respuesta>
+<respuesta right="1">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="3">
+<txt>¿B ha respondido explícitamente a lo que pregunta A o a otra cosa?</txt>
+<teoria></teoria>
+<explain>Sabemos que B no ha dado el tipo de respuesta que busca A. Por tanto, B no ha respondido explícitamente a la pregunta de A (mirar pregunta 2). Esto es así porque la respuesta “tengo que estudiar” no responde explícitamente a la invitación de A, para hacerlo debería haber respondido con un sí o con un no. Es decir, aceptando o rechazando la invitación.</explain>
+<respuestas>
+<respuesta right="0">Ha respondido a A</respuesta>
+<respuesta right="1">A otra cosa</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="4">
+<txt>¿B viola la máxima de relación con lo que ha dicho explícitamente (“tengo que estudiar”)?</txt>
+<teoria>[Teniendo en cuenta que la máxima de relación nos obliga a ser relevantes, es decir, a responder a lo que se nos pregunta y no a otra cosa]</teoria>
+<explain>En la anterior pregunta hemos dicho que B responde a otra cosa y no a lo que A está preguntando. B ha dicho que tiene que estudiar pero no ha respondido ni que sí ni que no a la pregunta de A. Por tanto, es evidente que B está violando la máxima de relación.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="5">
+<txt>¿Sabe A que B no ha respondido a lo que preguntaba sino a otra cosa?</txt>
+<teoria></teoria>
+<explain>Hemos dicho que A busca una respuesta de Sí o no. A sabe que B ha respondido “tengo que estudiar”. Por tanto A sabe que B no ha respondido explícitamente a lo que ha preguntado sino a otra cosa.</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="6">
+<txt>¿A sabe que B ha violado la máxima de relación?</txt>
+<teoria></teoria>
+<explain>[Sabemos que cuando alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está tratando de comunicar algo más o distinto a lo dicho explícitamente. Decimos entonces que está implicando algo y que sigue siendo cooperativo. Si alguien viola una máxima sin que la otra persona se de cuenta, entonces está dejando de ser cooperativo y no está implicando nada]</explain>
+<respuestas>
+<respuesta right="1">Sí</respuesta>
+<respuesta right="0">No</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+<pregunta num="7">
+<txt>Teniendo esto en cuenta, ¿B está tratando de comunicar a A algo más o distinto a lo dicho explícitamente con las palabras “tengo que estudiar”?</txt>
+<teoria>(Cuando alguien viola la máxima de cualidad sin que los demás sepan que la está violando, está mintiendo.
+ Cuando alguien viola la máxima de cualidad, de modo que los demás se den cuenta de que la está violando está implicando más información. Es decir, está comunicando algo más o algo distinto a lo que ha dicho explícitamente)</teoria>
+<explain>Según lo dicho en las preguntas anteriores, B ha violado la máxima de relación y A sabe que B ha violado la máxima de relación. Esto es obvio para ambos. Además sabemos que si alguien viola una máxima de tal modo que la persona con quien habla se da cuenta, entonces está implicando algo. Según esto B está tratando de comunicar algo más o distinto a lo dicho mediante las palabras textuales “tengo que estudiar”.</explain>
+<respuestas>
+<respuesta right="1">Sí, está implicando algo</respuesta>
+<respuesta right="0">No, ha dejado de ser cooperativo</respuesta>
+<respuesta right="0">No lo sé</respuesta>
+</respuestas>
+</pregunta>
+</preguntas>
+</Ejercicio>
+</Ejercicios>

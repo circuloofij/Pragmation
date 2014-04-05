@@ -1,0 +1,79 @@
+<div id="content" style="margin-top: -100px;">
+	<div id="dificultad">
+		<p class="margin_20" style="font-size:30px;color:white">Dificultad</p>
+		<div class="margin_20">
+		<table>
+<tr>
+<td><div id="dif1" class="btn_categoria verde"><a href="#!">Fácil</a></div></td>
+<td><div><div class="info_cat_verde">Podrás escoger la categoría de los ejercicios y las preguntas seran más sencillas</div></div></td>
+</tr>
+		</table>
+	</div>
+	<div class="margin_20">
+		<table>
+<tr>
+<td><div id="dif2" class="btn_categoria rojo"><a href="#!">Difícil</a></div></td>
+<td><div><div class="info_cat_rojo">No podrás escoger la categoría de los ejercicios y las preguntas seran más difíciles</div></div></td>
+</tr>
+		</table>
+	</div>
+	</div>
+	<div id="divCategorias" style="display:none">
+	<div class="margin_20">
+		<table>
+<tr>
+<td><div id="cat1" class="btn_categoria morado"><a href="#!">Máxima de cantidad</a></div></td>
+<td><div><div class="info_cat_morado">En estos ejercicios se practicará la capacidad para identificar si la información del emisor en una conversación es más que suficiente o insuficiente</div></div></td>
+</tr>
+		</table>
+	</div>
+	<div class="margin_20">
+		<table>
+<tr>
+<td><div id="cat2" class="btn_categoria naranja"><a href="#!">Máxima de cualidad</a></div></td>
+<td><div><div class="info_cat_naranja">En estos ejercicios se practicará la capacidad para identificar si la información del emisor en una conversación es verdadera</div></div></td>
+</tr>
+		</table>
+	</div>
+	<div class="margin_20">
+		<table>
+<tr>
+<td><div id="cat3" class="btn_categoria azul"><a href="#!">Máxima de relación</a></div></td>
+<td><div><div class="info_cat_azul">En estos ejercicios se practicará la capacidad para identificar si la información del emisor en una conversación es relevante</div></div></td>
+</tr>
+		</table>
+	</div>
+<div class="margin_20">
+		<table>
+<tr>
+<td><div id="cat4" class="btn_categoria turquesa"><a href="#!">Máxima de modo</a></div></td>
+<td><div><div class="info_cat_azul">En estos ejercicios se practicará la capacidad para identificar si la información del emisor en una conversación es relevante</div></div></td>
+</tr>
+		</table>
+	</div>
+</div>
+</div>
+<div id="footer">
+</div>
+</div>
+<div name="content"></div>
+<div name="footer"></div>
+<script>
+$('html, body').animate({ scrollTop: 0 }, 0);
+$("#dif1").click(function(){
+$("#dificultad").css("display", "none");
+$("#divCategorias").css("display", "block");
+});
+$("#dif2").click(function(){
+$("#contenido").load("web/pages/quest1.html", function() {fillExerciceDif();});
+});
+$("#cat1").click(function(){
+$("#contenido").load("web/pages/quest1.html", function() {fillExercice(1);});
+});
+$("#cat2").click(function(){
+$("#contenido").load("web/pages/quest1.html", function() {fillExercice(2);});
+});
+$("#cat3").click(function(){
+$("#contenido").load("web/pages/quest1.html", function() {fillExercice(3);});
+});
+</script>
